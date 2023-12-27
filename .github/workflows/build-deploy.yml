@@ -31,5 +31,5 @@ jobs:
         with:
           lfs: true
           token: ${{ secrets.GITHUB_TOKEN }}          
-          BRANCH: gh-pages
-          FOLDER: ./dist/browser
+          branch: gh-pages
+          folder: ./dist/browser
