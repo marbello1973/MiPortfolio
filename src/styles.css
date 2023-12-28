@@ -14,8 +14,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
     line-height: 1;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    background: linear-gradient(90deg, rgb(3, 8, 61) 0%, rgb(20, 2, 68)50%, rgb(24, 0, 54) 100%);
+       
 }
 
 ol, ul {
@@ -39,9 +39,14 @@ table {
 
 :root{
     --main-color: #0212E6;
+    --main-color-100: #606aff;
     --secondary-color: #3D02E6;
     --tertiary-color: #8702E6;
+    --tertiary-color-100: #bb5cff;
     --quaternary-color: #0058E6;
     --quinary-color: #9E02AC;
-    --senary-text: #f1f1f1;    
+    --senary-text: #f1f1f1; 
+    --black-gray: #333333; 
+    --lineas-500: #ff00ff; 
+    
 }

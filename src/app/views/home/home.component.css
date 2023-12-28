@@ -1,43 +1,179 @@
-main{
-   margin: 0;  
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;    
+    flex-direction: wrap;
+    align-items: center;
+    padding: 30px;
+    justify-content: center;
+    margin-top: 0.5em;
+}
+
+.textHello {
+    color: var(--senary-text);
+    font-size: 30px;
     
 }
 
-.containerCard {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
+.iam {
+    color: var(--main-color-100);
+    font-size: 70px;
+    margin-top: 10px;
 }
 
-.containerCard div {
-    flex: 1; /* Hace que las tarjetas se expandan para ocupar el espacio disponible */    
-    box-sizing: border-box; 
-}
-.imagen {
-    width: 100%;    
-    
+.spanLinea{   
+    display: block;
+    height: 3px;
+    width: 120px;  
+    margin: 5px 0;
+    color: #ffffff;
+    background-color: var(--lineas-500);
 }
 
-.texto{
-    margin: 4px;
+.dev{   
+    font-size: 60px;
+}
+
+.miName{
+    margin-left: 1.5em;
+    margin-top: 25px;
+    color: var(--senary-text);
+    font-size: 70px;
+
+}
+
+.miName a {
+    color: var(--lineas-500);
+}
+.name{
+    color: var(--senary-text);
+    font-size: 65px;
+    margin-top: 25px;
+    margin-left: 2em;
+}
+
+.introducer{
+    margin-left: 6.5em;
+    margin-top: 2em;
+    color: var(--senary-text);
     text-align: justify;
+    font-size: 20px;
+    border: 1px solid #320e53;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px #320e53;
 }
 
-@media (max-width: 760px){
-    .containerCard {
-        display: flex;
+.containerImagen{
+    margin-top: 2em;
+    max-width: 650px;
+    box-shadow: var(--lineas-500) 1px 0px 10px 0px;
+    background: var(--lineas-500);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerImagen img {
+    border-radius: 50%;
+    max-width: 500px;
+    height: auto;
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 1em;
+        margin-left: 0;
+        margin-top: 0;
+        transition: 1s;
+        
     }
 
-    .imagen{
-        width: 300px;
+    .containerText{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 0;
+    }    
+    
+    .textHello {       
+        font-size: 20px;        
+    }
+    
+    .iam {       
+        font-size: 50px;  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;      
+
+    }   
+    
+    .miName{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;       
+        font-size: 50px; 
+        margin-left: 0;  
+    }
+    
+    .miName a {
+        color: var(--lineas-500);
+    }
+    .name{
+        color: var(--senary-text);
+        font-size: 40px;       
+        margin-left: 0;    }
+    
+    .introducer{
+        margin-left: 0;        
+    }
+    
+    .containerImagen{
+        margin-top: 2em;
+        max-width: 650px;
+        box-shadow: var(--lineas-500) 1px 0px 10px 0px;
+        background: var(--lineas-500);
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+    }
+    
+    .containerImagen img {
+        border-radius: 6px;
+        max-width: 300px;
+        height: auto;
+        transition:1s;   
+    
     }
 
-    .texto {
-        text-align: justify;
-        width: 300px;
-    }
+    
+
 }
+
+
+
+/* .imagen{
+    opacity: 0.5;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #888888;
+    transition: 0.3s;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: center;
+    cursor: pointer;
+   
+
+} */
