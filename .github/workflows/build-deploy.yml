@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [18.x] # Selecciona la versión de Node.js según tus necesidades
+        node-version: [20.x] # Selecciona la versión de Node.js según tus necesidades
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -22,9 +22,7 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies and build
-        run: |
-          npm install
-          npm run-script deploy
+        run: npm run deploy
 
       - name: Deploy to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4.2.5
