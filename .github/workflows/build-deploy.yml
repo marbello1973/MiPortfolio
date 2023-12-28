@@ -22,7 +22,9 @@ jobs:
           cache: 'npm'
       
       - name: Install dependencies
-        run: npm install -g @angular/cli    
+        run: | 
+            npm install -g @angular/cli
+            npm install    
 
       - name: Install dependencies and build
         run: npm run deploy
