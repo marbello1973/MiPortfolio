@@ -1,0 +1,76 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 2em;
+    
+}
+
+.containerLinkedin{
+    width: 100px;
+    height: auto;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(39, 39, 39, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+
+    & p{
+        margin-top: 4px;
+        font-size: 16px;
+        font-family: 'Bebas Neue', cursive;
+    }   
+}
+
+.containerGithub{
+    width: 100px;
+    height: auto;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(39, 39, 39, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+
+    & p {
+        margin-top: 4px;
+        font-size: 16px;
+        font-family: 'Bebas Neue', cursive;
+    }
+}
+
+.linkedin{   
+    stroke-width: 0.1px;
+    fill: rgb(64, 0, 255);
+    width: 60px;
+    height: 60px;   
+}
+
+.linkedin:hover{
+    stroke:rgb(255, 255, 255);
+    stroke-width: 0.3px;
+    fill: var(--lineas-500);
+    width: 70px;
+    height: 70px; 
+    transition: 1s; 
+    transform: scale(1.1); 
+    cursor: pointer;    
+}
+
+.github{    
+    fill: rgb(64, 0, 255);
+    width: 60px;
+    height: 60px;    
+}
+
+.github:hover{
+    stroke:rgb(255, 255, 255);
+    stroke-width: 0.3px;
+    fill: var(--lineas-500);
+    width: 70px;
+    height: 70px; 
+    transition: 1s; 
+    transform: scale(1.1); 
+    cursor: pointer;    
+}
+
