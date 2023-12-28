@@ -5,10 +5,13 @@
     align-items: center;
 }
 
-/* .appCard{
+/* 
+.appCard{
     display: flex;
     flex-direction: row;
-} */
+}
+//temporal fuera de servicio 
+*/
 
 .container {
     max-width: 1200px;
