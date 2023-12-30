@@ -30,10 +30,10 @@ jobs:
       - name: Install dependencies and build
         run: npm run build:prod
       - name: Rename index for routing
-        run: mv dist/MiPortfolio/index.html dist/MiPortfolio/404.html
+        run: mv dist/browser/index.html dist/browser/404.html
       - name: Deploy to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:           
           token: ${{ secrets.GITHUB_TOKEN }}          
           branch: gh-pages
-          folder: ./dist/MiPortfolio
+          folder: ./dist/browser
