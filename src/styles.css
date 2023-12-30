@@ -5,6 +5,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, c
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    scroll-behavior: smooth;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -34,6 +35,12 @@ blockquote:before, blockquote:after, q:before, q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {       
+        scroll-behavior: auto !important;
+    }
 }
 
 

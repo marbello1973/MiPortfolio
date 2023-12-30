@@ -5,14 +5,6 @@
     align-items: center;
 }
 
-/* 
-.appCard{
-    display: flex;
-    flex-direction: row;
-}
-//temporal fuera de servicio 
-*/
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -32,7 +24,7 @@
 
 .iam {
     color: var(--main-color-100);
-    font-size: 70px;
+    font-size: 60px;
     margin-top: 10px;
 }
 
@@ -53,18 +45,21 @@
     margin-left: 1.5em;
     margin-top: 25px;
     color: var(--senary-text);
-    font-size: 70px;
-
+    font-size: 40px;
 }
 
 .miName a {
     color: var(--lineas-500);
+    
 }
 .name{
+    display: flex;
     color: var(--senary-text);
     font-size: 65px;
     margin-top: 25px;
     margin-left: 2em;
+    border-bottom: 4px solid var(--lineas-500);    
+    padding: 6px;
 }
 
 .introducer{
@@ -88,14 +83,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
 .containerImagen img {
     border-radius: 50%;
     max-width: 500px;
     height: auto;
+    
+}
 
+.skill{
+    color: var(--lineas-500);
+    font-family: 'Bebas Neue', cursive;
+}
 
+.and{
+    color: var(--lineas-500);
 }
 
 @media screen and (max-width: 768px) {

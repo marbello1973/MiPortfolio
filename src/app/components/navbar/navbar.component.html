@@ -1,15 +1,15 @@
 <nav class="navbar">
     <div class="logo"><a>d</a>m</div>
     <div class="menu-toggle" (click)="toggleMenu()">
-      <span #span1></span>
+      <span></span>
       <span></span>
       <span></span>    
     </div>
     <ul class="menu" [ngClass]="{'active': isMenuOpen}">
-      <li><a routerLink="home">inicio</a></li>
-      <li><a routerLink="about">mi</a></li>
-      <li><a routerLink="project">proyectos</a></li>
-      <li><a routerLink="contact">contacto</a></li>
+      <li><a (click)="scrollTo('home')">inicio</a></li>
+      <li><a (click)="scrollTo('about')">mi</a></li>
+      <li><a (click)="scrollTo('project')">proyectos</a></li>
+      <li><a (click)="scrollTo('contact')">contacto</a></li>
     </ul>
 </nav>
 

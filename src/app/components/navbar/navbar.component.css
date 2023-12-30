@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 10px;   
 }
 
 .logo {
@@ -54,6 +54,7 @@ font-family: 'Julius Sans One', sans-serif;
 font-weight: bold; 
 color: #fdfdfd;  
 transition: 1s; 
+cursor: pointer;
 }
 
 /* .menu li:hover {

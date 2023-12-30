@@ -1,0 +1,28 @@
+.mainContainer{
+   margin-top: 4em;
+   color: #fff;
+}
+
+.olContainer {
+   margin:0 auto;
+}
+
+
+.box{
+   margin-bottom: 10px;
+   position: relative;
+}
+
+.box::before{
+   content: "";
+   position: absolute;
+   width: 1px;
+   height: 80%;
+   background: #fff;
+   top: 10px; 
+   left: -15px;
+}
+
+
+
+   
