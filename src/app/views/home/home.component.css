@@ -102,6 +102,10 @@
     color: var(--lineas-500);
 }
 
+.CargandoImagen {
+    color: #ffffff;
+}
+
 @media screen and (max-width: 768px) {
     .container {
         flex-direction: column;
