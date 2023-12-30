@@ -20,53 +20,44 @@ font-size: 25px;
 }
 
 .menu-toggle {
-cursor: pointer;
-display: none;
+    cursor: pointer;
+    display: none;
 }
   
 .menu-toggle span {
-display: block;
-height: 3px;
-width: 25px;
-background-color: #ffffff;
-margin: 5px 0;
-color: #333;
+    display: block;
+    height: 3px;
+    width: 25px;
+    background-color: #ffffff;
+    margin: 5px 0;
+    color: #333;
 }
   
 .menu {
-list-style-type: none;
-display: flex;
+    display: flex;
 }
   
-.menu li {
-margin: 0 15px;
-text-decoration: none;
-list-style: none;
-padding: 10px;
-font-size: 14px;
-transition: 1s;
+.menu-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 15px;
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: bold; 
+    color: #fdfdfd;  
+    transition: 1s; 
+    cursor: pointer;
+    padding: 10px;
+    font-size: 14px;
+    transition: 0.5s;
 }
 
-.menu li a {  
-text-decoration: none;
-list-style: none;
-font-family: 'Julius Sans One', sans-serif;
-font-weight: bold; 
-color: #fdfdfd;  
-transition: 1s; 
-cursor: pointer;
+.menu-a:hover {
+    background: #fdfdfd;
+    color: #333;
+    transition: 0.5s;
 }
-
-/* .menu li:hover {
-background: #333;
-transition: 1s;  
-border-radius: 4px; 
-}
-
-.menu li a:hover {
-    color: #ebebeb;    
-} */
-
   
   @media screen and (max-width: 768px) {
     .navbar{
@@ -87,16 +78,9 @@ border-radius: 4px;
         transition: 1s;
         z-index: 1;       
         transition: opacity 0.5s ease, visibility 0.5s ease;       
-    }
+    }  
 
-    .menu li {  
-        display: flex;
-        justify-content: center;
-        align-items: center;              
-        transition: opacity 0.5s ease, visibility 0.5s ease; 
-    }
-
-    .menu li a {
+    .menu a {
         text-align: center;      
         transition: opacity 0.5s ease, visibility 0.5s ease; 
     }

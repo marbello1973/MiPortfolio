@@ -1,22 +1,27 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { RouterModule, RouterLinkActive } from '@angular/router';
 import { Router } from '@angular/router';
+import { routes} from '../../app.routes'
 
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, RouterLinkActive],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+  styleUrls: ['./navbar.component.css'],
+
 })
 export class NavbarComponent   {
 
   isMenuOpen = false;
 
-  constructor(private router: Router) { }
+  public menuRoutes = routes.map( route => route)
+    .filter( (route) =>  !route.path?.includes('**'))   
 
+  constructor(private router: Router) { }
+   
   scrollTo(sectionId: string) {
     const element = document.getElementById(sectionId);
     if(element){
@@ -29,13 +34,10 @@ export class NavbarComponent   {
       this.isMenuOpen = !this.isMenuOpen;
   }
 
-  @ViewChild('span1') span1!: ElementRef;
-
 
   
 
-
-
+  // @ViewChild('span1') span1!: ElementRef;
 
   // menuButton: boolean = false;
 
