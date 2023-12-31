@@ -57,169 +57,73 @@
     color: #fff;
 }
 
-.containerGithub{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;    
-    height: 30px;
-    text-align: center;
-    color: var( --secondary-color);
-    box-shadow: 0px 0px 10px 0px rgba(105, 105, 105, 0.75);
-    border-radius: 150px 150px 150px 150px;
-    padding: 4px; 
-    background: #ffffff;
-    cursor: pointer;       
-
-    & span{
-        margin-top: 4px;        
-        padding: 4px;
-        font-size: 16px;
-        font-family: 'Bebas Neue', cursive;
-    }  
-}
-
-.github{    
-    fill: var(--secondary-color);
-    width: 40px;
-    height: 3
-40px;
-    padding: 10px;     
-}
-
-.containerGithub:hover{
-    transition: 0.3s; 
-    transform: scale(1.1); 
-    background: var(--secondary-color);
-    box-shadow: 0px 0px 10px 0px rgba(211, 211, 211, 0.75);    
-    & span {
-        transition: 1s;   
-        color: #fff;     
-    }
-    .github{
-        transition: 1s;
-        fill: #fff;   
-        
-    }    
-}
-
-.containerGithub span:hover{
-    cursor: pointer;
-    color: #fff;
-}
-
-
-.containerHtml{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;    
-    height: 30px;
-    text-align: center;
-    color: var( --secondary-color);
-    box-shadow: 0px 0px 10px 0px rgba(105, 105, 105, 0.75);
-    border-radius: 150px 150px 150px 150px;
-    padding: 4px; 
-    background: #ffffff;
-    cursor: pointer;       
-
-    & span{
-        margin-top: 4px;       
-        padding: 4px;
-        font-size: 16px;
-        font-family: 'Bebas Neue', cursive;
-    }   
-}
-
-.html{
-    fill: var(--secondary-color);
-    width: 40px;
-    height: 40px; 
-    padding: 10px;      
-}
-
-.containerHtml:hover{
-    transition: 0.3s; 
-    transform: scale(1.1); 
-    background: var(--secondary-color);
-    box-shadow: 0px 0px 10px 0px rgba(211, 211, 211, 0.75);    
-    & span {
-        transition: 1s;   
-        color: #fff;     
-    }
-    .html{
-        transition: 1s;
-        fill: #fff;   
-        
-    }    
-}
-
-.containerHtml span:hover{
-    cursor: pointer;
-    color: #fff;
-}
-
 
 @media screen and (max-width: 768px) {
-    .container {
+    .container {    
+        display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        margin-left: 0;
-        margin-top: 0;
-        transition: 1s;
+        flex-wrap: nowrap;
+        gap: 2em;
         
     }
-
+    
     .containerLinkedin{
-        margin-top: 1em;
-    }
-
-    .containerGithub{
-        margin-top: 1em;
-    }
-
-    .containerHtml{
-        margin-top: 1em;
-    }
-
-    .containerText{
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
+        width: 200px;         
+        height: 30px;
+        margin: 0 auto;
         text-align: center;
-        margin-left: 0;
-        margin-top: 0;
-    }    
+        color: var( --secondary-color);
+        box-shadow: 0px 0px 10px 0px rgba(105, 105, 105, 0.75);
+        border-radius: 150px 150px 150px 150px;
+        padding: 10px; 
+        background: #ffffff; 
+        cursor: pointer;  
     
-    .textHello {       
-        font-size: 20px;        
+        & span{
+            margin-top: 4px;        
+            padding: 4px;
+            font-size: 12px;
+            font-family: 'Bebas Neue', cursive;
+        }   
     }
     
-    .iam {       
-        font-size: 50px;  
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;      
+    .linkedin{    
+        fill: var(--secondary-color);
+        width: 40px;
+        height: 40px; 
+        padding: 10px;  
+    }
+    
+    .containerLinkedin:hover{
+        transition: 0.3s; 
+        transform: scale(1.1); 
+        background: var(--secondary-color);
+        box-shadow: 0px 0px 10px 0px rgba(211, 211, 211, 0.75);    
+        & span {
+            transition: 1s;   
+            color: #fff;     
+        }
+        .linkedin{
+            transition: 1s;
+            fill: #fff;   
+            
+        }    
+    }
+    
+    .containerLinkedin span:hover{
+        cursor: pointer;
+        color: #fff;
     }
 
-    .containerImagen{
-        margin-top: 2em;
-        max-width: 650px;
-        box-shadow: var(--lineas-500) 1px 0px 10px 0px;
-        background: var(--lineas-500);
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    
+    
+    
 
-    .containerImagen img {
-        border-radius: 50%;
-        max-width: 500px;
-        height: auto;
-    }
+   
 
 }

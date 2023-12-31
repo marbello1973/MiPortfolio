@@ -1,4 +1,7 @@
+/* Global Styles */
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -10,6 +13,9 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, c
     font: inherit;
     vertical-align: baseline;
     scroll-behavior: smooth;
+    /* background: linear-gradient(90deg, rgb(3, 8, 61) 0%, rgb(20, 2, 68)50%, rgb(24, 0, 54) 100%);
+    background-repeat: no-repeat;
+    background: cover; */
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -17,10 +23,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: block;
 }
 
-body {    
-    line-height: 1;
+body {        
     background: linear-gradient(90deg, rgb(3, 8, 61) 0%, rgb(20, 2, 68)50%, rgb(24, 0, 54) 100%);
-       
+    background: cover; 
 }
 
 ol, ul {
