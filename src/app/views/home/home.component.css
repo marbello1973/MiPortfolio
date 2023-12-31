@@ -170,7 +170,7 @@
         margin: 0 auto;
         font-size: 16px;
         padding: 0.5em;
-        color: #a5b5ee;
+        color: #ced7f5;
         font-weight: bold;
     }
 
@@ -182,12 +182,14 @@
     }
 
     .skill{
-        color: #fff
+        color: #fff;
+        letter-spacing: 2px;     
         
     }
 
     .imagen{
-        opacity: 0.2;        
+        opacity: 0.2;  
+        
     }
         
 
