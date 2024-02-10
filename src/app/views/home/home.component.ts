@@ -3,7 +3,7 @@ import {CardskillComponent} from '../../components/cardskill/cardskill.component
 import { ProjectComponent } from '../project/project.component';
 import { ContactComponent } from '../contact/contact.component';
 import { AboutComponent } from '../about/about.component';
-import { CardsvgComponent } from '../../components/cardsvg/cardsvg.component';
+
 
 
 @Component({
@@ -14,7 +14,7 @@ import { CardsvgComponent } from '../../components/cardsvg/cardsvg.component';
     ProjectComponent, 
     ContactComponent, 
     AboutComponent, 
-    CardsvgComponent
+    
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'

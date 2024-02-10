@@ -1,8 +1,9 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, RouterLinkActive } from '@angular/router';
 import { Router } from '@angular/router';
 import { routes} from '../../app.routes'
+
 
 
 @Component({
@@ -33,6 +34,18 @@ export class NavbarComponent   {
   toggleMenu(): void {   
       this.isMenuOpen = !this.isMenuOpen;
   }
+  
+  // @ViewChild('navbar') navbar!: ElementRef;
+  // @HostListener('document:mousemove', ['$event'])
+  // onMouseMove(e: MouseEvent) {
+    
+  // }
+
+  
+  // public mouseOpen($event: Event): void {
+  //   const src = this.navBar.nativeElement.scrollToIndex(0);
+  //   console.log(src);
+  // }
 
 
   

@@ -99,6 +99,11 @@
     
 }
 
+.imagen{    
+    width: 900px;
+    height: 0 auto;    
+}
+
 .skill{
     color: var(--lineas-500);
     font-family: 'Bebas Neue', cursive;

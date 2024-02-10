@@ -1,9 +1,11 @@
-<nav class="navbar">
-  <div class="logo"><a>d</a>m</div>
-  <div class="menu-toggle" (click)="toggleMenu()">
-    <span></span>
-    <span></span>
-    <span></span>    
+<nav id="navOpen" class="navbar">  
+  <div class="containerDiv">
+    <div id="dm" class="logo"><a>d</a>m</div>
+    <div class="menu-toggle" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>    
+    </div>
   </div>
   <div class="menu" [ngClass]="{'active': isMenuOpen}">       
       @for (menu of menuRoutes; track $index) {
@@ -14,11 +16,4 @@
   </div>
 </nav>
     
-    
-    <!-- <li><a (click)="scrollTo('about')">mi</a></li>
-    <li><a (click)="scrollTo('project')">proyectos</a></li>
-    <li><a (click)="scrollTo('contact')">contacto</a></li> -->       
-
-  <!-- (click)="scrollTo(menu.path)"
-   routerLinkActive="active" 
-  -->
+  

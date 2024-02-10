@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CardsvgComponent } from './cardsvg.component';
+import { ButtonsInicioComponent } from './buttons-inicio.component';
 
-describe('CardsvgComponent', () => {
-  let component: CardsvgComponent;
-  let fixture: ComponentFixture<CardsvgComponent>;
+describe('ButtonsInicioComponent', () => {
+  let component: ButtonsInicioComponent;
+  let fixture: ComponentFixture<ButtonsInicioComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CardsvgComponent]
+      imports: [ButtonsInicioComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(CardsvgComponent);
+    fixture = TestBed.createComponent(ButtonsInicioComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

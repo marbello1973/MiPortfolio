@@ -8,6 +8,7 @@ export const routes: Routes = [
     {path: 'inicio', component: HomeComponent },
     {path: 'sobre mi', component: AboutComponent}, 
     {path: 'proyectos', component: ProjectComponent},
-    {path: 'contacto', component: ContactComponent },
+    {path: 'contacto', component: ContactComponent },    
     {path: '**', pathMatch: 'full', redirectTo: 'inicio'}   
+
 ];

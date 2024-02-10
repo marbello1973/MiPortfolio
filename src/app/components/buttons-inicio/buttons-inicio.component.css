@@ -1,0 +1,19 @@
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+    margin-left: 90%;
+    background: rgb(184, 184, 184);
+}
+
+@media screen and (max-width: 760px) {
+    .float {
+        margin-left: 30%;
+        
+    }
+    
+}
