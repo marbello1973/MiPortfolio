@@ -2,54 +2,526 @@
 
     <div class="container">
 
-        <section>
+        <section class="work_experience">
 
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-databricks" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 17l9 5l9 -5v-3l-9 5l-9 -5v-3l9 5l9 -5v-3l-9 5l-9 -5l9 -5l5.418 3.01" /></svg>
 
-            <span>Experiencia laboral</span>
+            <span>Proyectos</span>
             
         </section>
 
-        <section>        
+        <section class="container_work_experience">        
+            
             <ol class="olContainer">
-                <li class="box">                                
-                    <span>
-                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 20 20">
+
+                <li class="boxLi"> 
+
+                    <span class="spanSvg">
+                        <svg class="svg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 20 20">
                             <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
                         </svg>
                     </span>
-                    <h3>Flowbite Application UI v2.0.0 <span >Latest</span></h3>
-                    <time>Released on January 13th, 2022</time>
-                    <p >Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
-                    <a href="#">
-                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 20 20">
-                        <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z"/>
-                        <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/>
-                        </svg>Download ZIP</a>
-                </li>
-                <li class="box" >
-                    <span>
-                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 20 20">
+
+                    <div class="containerImagen">
+
+                        <span class="imagen" >
+                            @defer () {
+                                <span class="imagenContainer">
+                                    <!-- <h1><a href="https://gym-go-five.vercel.app/" target="_blank">{{projectDataService[0].name}}</a></h1> -->
+                                    <img [src]="projectDataService[0].imagen" [alt]="projectDataService[0].name">
+                                    <!-- <h1>imagen</h1> -->
+                                </span>
+                            }@placeholder (minimum 5s) {
+                                <span class="svgLoader">                   
+                                    <svg width="57" height="57" viewBox="0 0 57 57" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <g transform="translate(1 1)" stroke-width="2">
+                                                <circle cx="5" cy="50" r="5">
+                                                    <animate attributeName="cy"
+                                                        begin="0s" dur="2.2s"
+                                                        values="50;5;50;50"
+                                                        calcMode="linear"
+                                                        repeatCount="indefinite" />
+                                                    <animate attributeName="cx"
+                                                        begin="0s" dur="2.2s"
+                                                        values="5;27;49;5"
+                                                        calcMode="linear"
+                                                        repeatCount="indefinite" />
+                                                </circle>
+                                                <circle cx="27" cy="5" r="5">
+                                                    <animate attributeName="cy"
+                                                        begin="0s" dur="2.2s"
+                                                        from="5" to="5"
+                                                        values="5;50;50;5"
+                                                        calcMode="linear"
+                                                        repeatCount="indefinite" />
+                                                    <animate attributeName="cx"
+                                                        begin="0s" dur="2.2s"
+                                                        from="27" to="27"
+                                                        values="27;49;5;27"
+                                                        calcMode="linear"
+                                                        repeatCount="indefinite" />
+                                                </circle>
+                                                <circle cx="49" cy="50" r="5">
+                                                    <animate attributeName="cy"
+                                                        begin="0s" dur="2.2s"
+                                                        values="50;50;5;50"
+                                                        calcMode="linear"
+                                                        repeatCount="indefinite" />
+                                                    <animate attributeName="cx"
+                                                        from="49" to="49"
+                                                        begin="0s" dur="2.2s"
+                                                        values="49;5;27;49"
+                                                        calcMode="linear"
+                                                        repeatCount="indefinite" />
+                                                </circle>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                            }
+                        </span>
+
+                        <div class="divContainersvg">
+
+                            <span class="titleGymGo">
+                                <a href="https://gym-go-five.vercel.app/" target="_blank">{{projectDataService[0].name}}</a>
+                            </span>
+
+                            <span class="containerSvg">
+                                <span class="svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"/></svg> 
+                                </span>
+                                <span class="title">
+                                    <h2>{{algorithm}}</h2>                                    
+                                </span>                                
+                            </span>
+                            <span class="description">
+                                <p>{{algorithms[0]}}</p> 
+                            </span>
+
+                            <span class="containerSvg">
+                                <span class="svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-120q-151 0-255.5-46.5T120-280v-400q0-66 105.5-113T480-840q149 0 254.5 47T840-680v400q0 67-104.5 113.5T480-120Zm0-479q89 0 179-25.5T760-679q-11-29-100.5-55T480-760q-91 0-178.5 25.5T200-679q14 30 101.5 55T480-599Zm0 199q42 0 81-4t74.5-11.5q35.5-7.5 67-18.5t57.5-25v-120q-26 14-57.5 25t-67 18.5Q600-528 561-524t-81 4q-42 0-82-4t-75.5-11.5Q287-543 256-554t-56-25v120q25 14 56 25t66.5 18.5Q358-408 398-404t82 4Zm0 200q46 0 93.5-7t87.5-18.5q40-11.5 67-26t32-29.5v-98q-26 14-57.5 25t-67 18.5Q600-328 561-324t-81 4q-42 0-82-4t-75.5-11.5Q287-343 256-354t-56-25v99q5 15 31.5 29t66.5 25.5q40 11.5 88 18.5t94 7Z"/></svg>
+                                </span>
+                                <span class="title">
+                                    <h2>{{resource}}</h2>                                    
+                                </span>                                
+                            </span>
+                            <span class="description">
+                                <p>{{resources[0]}}</p> 
+                            </span>
+
+                            <span class="containerSvg">
+                                <span class="svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m380-300 280-180-280-180v360ZM160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h640v-480H160v480Zm0 0v-480 480Z"/></svg>
+                                </span>
+                                <span class="title">
+                                    <h2>{{stream}}</h2>                                    
+                                </span>                                
+                            </span>
+                            <span class="description">
+                                <p>{{streaming[0]}}</p> 
+                            </span>
+
+                            <span class="containerSvg">
+                                <span class="svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-840h320v320H120v-320Zm80 80v160-160Zm320-80h320v320H520v-320Zm80 80v160-160ZM120-440h320v320H120v-320Zm80 80v160-160Zm440-80h80v120h120v80H720v120h-80v-120H520v-80h120v-120Zm-40-320v160h160v-160H600Zm-400 0v160h160v-160H200Zm0 400v160h160v-160H200Z"/></svg>
+                                </span>
+                                <span class="title">
+                                    <h2>{{quiz}}</h2>                                    
+                                </span>                                
+                            </span>
+                            <span class="description">
+                                <p>{{cuestionarios[0]}}</p> 
+                            </span>
+
+                        </div>
+                    </div>
+                </li> 
+                
+                
+                <li class="boxLi"> 
+
+                    <span class="spanSvg">
+                        <svg class="svg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 20 20">
                             <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
                         </svg>
                     </span>
-                    <h3>Flowbite Figma v1.3.0</h3>
-                    <time>Released on December 7th, 2021</time>
-                    <p>All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.
-                    </p>
+
+                    <div class="containerImagen">
+
+                        <span class="imagen" >
+                            @defer () {
+                                <span class="imagenContainer">
+                                    <!-- <h1><a href="https://gym-go-five.vercel.app/" target="_blank">{{projectDataService[0].name}}</a></h1> -->
+                                    <img [src]="projectDataService[4].imagen" [alt]="projectDataService[4].name">
+                                    <!-- <h1>imagen</h1> -->
+                                </span>
+                            }@placeholder (minimum 5s) {
+                                <span class="svgLoader">                   
+                                    <svg width="57" height="57" viewBox="0 0 57 57" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <g transform="translate(1 1)" stroke-width="2">
+                                                <circle cx="5" cy="50" r="5">
+                                                    <animate attributeName="cy"
+                                                        begin="0s" dur="2.2s"
+                                                        values="50;5;50;50"
+                                                        calcMode="linear"
+                                                        repeatCount="indefinite" />
+                                                    <animate attributeName="cx"
+                                                        begin="0s" dur="2.2s"
+                                                        values="5;27;49;5"
+                                                        calcMode="linear"
+                                                        repeatCount="indefinite" />
+                                                </circle>
+                                                <circle cx="27" cy="5" r="5">
+                                                    <animate attributeName="cy"
+                                                        begin="0s" dur="2.2s"
+                                                        from="5" to="5"
+                                                        values="5;50;50;5"
+                                                        calcMode="linear"
+                                                        repeatCount="indefinite" />
+                                                    <animate attributeName="cx"
+                                                        begin="0s" dur="2.2s"
+                                                        from="27" to="27"
+                                                        values="27;49;5;27"
+                                                        calcMode="linear"
+                                                        repeatCount="indefinite" />
+                                                </circle>
+                                                <circle cx="49" cy="50" r="5">
+                                                    <animate attributeName="cy"
+                                                        begin="0s" dur="2.2s"
+                                                        values="50;50;5;50"
+                                                        calcMode="linear"
+                                                        repeatCount="indefinite" />
+                                                    <animate attributeName="cx"
+                                                        from="49" to="49"
+                                                        begin="0s" dur="2.2s"
+                                                        values="49;5;27;49"
+                                                        calcMode="linear"
+                                                        repeatCount="indefinite" />
+                                                </circle>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                            }
+                        </span>
+
+                        <div class="divContainersvg">
+
+                            <span class="titleGymGo">
+                                <a href="https://ritauttara.netlify.app/" target="_blank">{{projectDataService[4].name}}</a>
+                            </span>
+
+                            <span class="containerSvg">
+                                <span class="svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"/></svg> 
+                                </span>
+                                <span class="title">
+                                    <h2>{{algorithm}}</h2>                                    
+                                </span>                                
+                            </span>
+                            <span class="description">
+                                <p>{{algorithms[4]}}</p> 
+                            </span>
+
+                            <span class="containerSvg">
+                                <span class="svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-120q-151 0-255.5-46.5T120-280v-400q0-66 105.5-113T480-840q149 0 254.5 47T840-680v400q0 67-104.5 113.5T480-120Zm0-479q89 0 179-25.5T760-679q-11-29-100.5-55T480-760q-91 0-178.5 25.5T200-679q14 30 101.5 55T480-599Zm0 199q42 0 81-4t74.5-11.5q35.5-7.5 67-18.5t57.5-25v-120q-26 14-57.5 25t-67 18.5Q600-528 561-524t-81 4q-42 0-82-4t-75.5-11.5Q287-543 256-554t-56-25v120q25 14 56 25t66.5 18.5Q358-408 398-404t82 4Zm0 200q46 0 93.5-7t87.5-18.5q40-11.5 67-26t32-29.5v-98q-26 14-57.5 25t-67 18.5Q600-328 561-324t-81 4q-42 0-82-4t-75.5-11.5Q287-343 256-354t-56-25v99q5 15 31.5 29t66.5 25.5q40 11.5 88 18.5t94 7Z"/></svg>
+                                </span>
+                                <span class="title">
+                                    <h2>{{resource}}</h2>                                    
+                                </span>                                
+                            </span>
+                            <span class="description">
+                                <p>{{resources[4]}}</p> 
+                            </span>
+
+                            <span class="containerSvg">
+                                <span class="svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m380-300 280-180-280-180v360ZM160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h640v-480H160v480Zm0 0v-480 480Z"/></svg>
+                                </span>
+                                <span class="title">
+                                    <h2>{{stream}}</h2>                                    
+                                </span>                                
+                            </span>
+                            <span class="description">
+                                <p>{{streaming[4]}}</p> 
+                            </span>
+
+                            <span class="containerSvg">
+                                <span class="svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-840h320v320H120v-320Zm80 80v160-160Zm320-80h320v320H520v-320Zm80 80v160-160ZM120-440h320v320H120v-320Zm80 80v160-160Zm440-80h80v120h120v80H720v120h-80v-120H520v-80h120v-120Zm-40-320v160h160v-160H600Zm-400 0v160h160v-160H200Zm0 400v160h160v-160H200Z"/></svg>
+                                </span>
+                                <span class="title">
+                                    <h2>{{quiz}}</h2>                                    
+                                </span>                                
+                            </span>
+                            <span class="description">
+                                <p>{{cuestionarios[4]}}</p> 
+                            </span>
+
+                        </div>
+                    </div>
                 </li>
-                <li class="box">
-                    <span>
-                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 20 20">
-                        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+
+                <li class="boxLi"> 
+
+                    <span class="spanSvg">
+                        <svg class="svg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 20 20">
+                            <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
                         </svg>
                     </span>
-                    <h3>Flowbite Library v1.2.2</h3>
-                    <time>Released on December 2nd, 2021</time>
-                    <p>Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
+
+                    <div class="containerImagen">
+
+                        <span class="imagen" >
+                            @defer () {
+                                <span class="imagenContainer">
+                                    <!-- <h1><a href="https://gym-go-five.vercel.app/" target="_blank">{{projectDataService[0].name}}</a></h1> -->
+                                    <img [src]="projectDataService[2].imagen" [alt]="projectDataService[2].name">
+                                    <!-- <h1>imagen</h1> -->
+                                </span>
+                            }@placeholder (minimum 5s) {
+                                <span class="svgLoader">                   
+                                    <svg width="57" height="57" viewBox="0 0 57 57" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <g transform="translate(1 1)" stroke-width="2">
+                                                <circle cx="5" cy="50" r="5">
+                                                    <animate attributeName="cy"
+                                                        begin="0s" dur="2.2s"
+                                                        values="50;5;50;50"
+                                                        calcMode="linear"
+                                                        repeatCount="indefinite" />
+                                                    <animate attributeName="cx"
+                                                        begin="0s" dur="2.2s"
+                                                        values="5;27;49;5"
+                                                        calcMode="linear"
+                                                        repeatCount="indefinite" />
+                                                </circle>
+                                                <circle cx="27" cy="5" r="5">
+                                                    <animate attributeName="cy"
+                                                        begin="0s" dur="2.2s"
+                                                        from="5" to="5"
+                                                        values="5;50;50;5"
+                                                        calcMode="linear"
+                                                        repeatCount="indefinite" />
+                                                    <animate attributeName="cx"
+                                                        begin="0s" dur="2.2s"
+                                                        from="27" to="27"
+                                                        values="27;49;5;27"
+                                                        calcMode="linear"
+                                                        repeatCount="indefinite" />
+                                                </circle>
+                                                <circle cx="49" cy="50" r="5">
+                                                    <animate attributeName="cy"
+                                                        begin="0s" dur="2.2s"
+                                                        values="50;50;5;50"
+                                                        calcMode="linear"
+                                                        repeatCount="indefinite" />
+                                                    <animate attributeName="cx"
+                                                        from="49" to="49"
+                                                        begin="0s" dur="2.2s"
+                                                        values="49;5;27;49"
+                                                        calcMode="linear"
+                                                        repeatCount="indefinite" />
+                                                </circle>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                            }
+                        </span>
+
+                        <div class="divContainersvg">
+
+                            <span class="titleGymGo">
+                                <a href="https://03-pi-marbello1973.vercel.app/" target="_blank">{{projectDataService[2].name}}</a>
+                            </span>
+
+                            <span class="containerSvg">
+                                <span class="svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"/></svg> 
+                                </span>
+                                <span class="title">
+                                    <h2>{{algorithm}}</h2>                                    
+                                </span>                                
+                            </span>
+                            <span class="description">
+                                <p>{{algorithms[2]}}</p> 
+                            </span>
+
+                            <span class="containerSvg">
+                                <span class="svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-120q-151 0-255.5-46.5T120-280v-400q0-66 105.5-113T480-840q149 0 254.5 47T840-680v400q0 67-104.5 113.5T480-120Zm0-479q89 0 179-25.5T760-679q-11-29-100.5-55T480-760q-91 0-178.5 25.5T200-679q14 30 101.5 55T480-599Zm0 199q42 0 81-4t74.5-11.5q35.5-7.5 67-18.5t57.5-25v-120q-26 14-57.5 25t-67 18.5Q600-528 561-524t-81 4q-42 0-82-4t-75.5-11.5Q287-543 256-554t-56-25v120q25 14 56 25t66.5 18.5Q358-408 398-404t82 4Zm0 200q46 0 93.5-7t87.5-18.5q40-11.5 67-26t32-29.5v-98q-26 14-57.5 25t-67 18.5Q600-328 561-324t-81 4q-42 0-82-4t-75.5-11.5Q287-343 256-354t-56-25v99q5 15 31.5 29t66.5 25.5q40 11.5 88 18.5t94 7Z"/></svg>
+                                </span>
+                                <span class="title">
+                                    <h2>{{resource}}</h2>                                    
+                                </span>                                
+                            </span>
+                            <span class="description">
+                                <p>{{resources[2]}}</p> 
+                            </span>
+
+                            <span class="containerSvg">
+                                <span class="svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m380-300 280-180-280-180v360ZM160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h640v-480H160v480Zm0 0v-480 480Z"/></svg>
+                                </span>
+                                <span class="title">
+                                    <h2>{{stream}}</h2>                                    
+                                </span>                                
+                            </span>
+                            <span class="description">
+                                <p>{{streaming[2]}}</p> 
+                            </span>
+
+                            <span class="containerSvg">
+                                <span class="svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-840h320v320H120v-320Zm80 80v160-160Zm320-80h320v320H520v-320Zm80 80v160-160ZM120-440h320v320H120v-320Zm80 80v160-160Zm440-80h80v120h120v80H720v120h-80v-120H520v-80h120v-120Zm-40-320v160h160v-160H600Zm-400 0v160h160v-160H200Zm0 400v160h160v-160H200Z"/></svg>
+                                </span>
+                                <span class="title">
+                                    <h2>{{quiz}}</h2>                                    
+                                </span>                                
+                            </span>
+                            <span class="description">
+                                <p>{{cuestionarios[2]}}</p> 
+                            </span>
+
+                        </div>
+                    </div>
                 </li>
+
+
+                <li class="boxLi"> 
+
+                    <span class="spanSvg">
+                        <svg class="svg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 20 20">
+                            <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                        </svg>
+                    </span>
+
+                    <div class="containerImagen">
+
+                        <span class="imagen" >
+                            @defer () {
+                                <span class="imagenContainer">
+                                    <!-- <h1><a href="https://gym-go-five.vercel.app/" target="_blank">{{projectDataService[0].name}}</a></h1> -->
+                                    <img [src]="projectDataService[1].imagen" [alt]="projectDataService[1].name">
+                                    <!-- <h1>imagen</h1> -->
+                                </span>
+                            }@placeholder (minimum 5s) {
+                                <span class="svgLoader">                   
+                                    <svg width="57" height="57" viewBox="0 0 57 57" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <g transform="translate(1 1)" stroke-width="2">
+                                                <circle cx="5" cy="50" r="5">
+                                                    <animate attributeName="cy"
+                                                        begin="0s" dur="2.2s"
+                                                        values="50;5;50;50"
+                                                        calcMode="linear"
+                                                        repeatCount="indefinite" />
+                                                    <animate attributeName="cx"
+                                                        begin="0s" dur="2.2s"
+                                                        values="5;27;49;5"
+                                                        calcMode="linear"
+                                                        repeatCount="indefinite" />
+                                                </circle>
+                                                <circle cx="27" cy="5" r="5">
+                                                    <animate attributeName="cy"
+                                                        begin="0s" dur="2.2s"
+                                                        from="5" to="5"
+                                                        values="5;50;50;5"
+                                                        calcMode="linear"
+                                                        repeatCount="indefinite" />
+                                                    <animate attributeName="cx"
+                                                        begin="0s" dur="2.2s"
+                                                        from="27" to="27"
+                                                        values="27;49;5;27"
+                                                        calcMode="linear"
+                                                        repeatCount="indefinite" />
+                                                </circle>
+                                                <circle cx="49" cy="50" r="5">
+                                                    <animate attributeName="cy"
+                                                        begin="0s" dur="2.2s"
+                                                        values="50;50;5;50"
+                                                        calcMode="linear"
+                                                        repeatCount="indefinite" />
+                                                    <animate attributeName="cx"
+                                                        from="49" to="49"
+                                                        begin="0s" dur="2.2s"
+                                                        values="49;5;27;49"
+                                                        calcMode="linear"
+                                                        repeatCount="indefinite" />
+                                                </circle>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                            }
+                        </span>
+
+                        <div class="divContainersvg">
+
+                            <span class="titleGymGo">
+                                <a href="https://country-app-fawn-three.vercel.app/countries/by-region" target="_blank">{{projectDataService[1].name}}</a>
+                            </span>
+
+                            <span class="containerSvg">
+                                <span class="svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"/></svg> 
+                                </span>
+                                <span class="title">
+                                    <h2>{{algorithm}}</h2>                                    
+                                </span>                                
+                            </span>
+                            <span class="description">
+                                <p>{{algorithms[1]}}</p> 
+                            </span>
+
+                            <span class="containerSvg">
+                                <span class="svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-120q-151 0-255.5-46.5T120-280v-400q0-66 105.5-113T480-840q149 0 254.5 47T840-680v400q0 67-104.5 113.5T480-120Zm0-479q89 0 179-25.5T760-679q-11-29-100.5-55T480-760q-91 0-178.5 25.5T200-679q14 30 101.5 55T480-599Zm0 199q42 0 81-4t74.5-11.5q35.5-7.5 67-18.5t57.5-25v-120q-26 14-57.5 25t-67 18.5Q600-528 561-524t-81 4q-42 0-82-4t-75.5-11.5Q287-543 256-554t-56-25v120q25 14 56 25t66.5 18.5Q358-408 398-404t82 4Zm0 200q46 0 93.5-7t87.5-18.5q40-11.5 67-26t32-29.5v-98q-26 14-57.5 25t-67 18.5Q600-328 561-324t-81 4q-42 0-82-4t-75.5-11.5Q287-343 256-354t-56-25v99q5 15 31.5 29t66.5 25.5q40 11.5 88 18.5t94 7Z"/></svg>
+                                </span>
+                                <span class="title">
+                                    <h2>{{resource}}</h2>                                    
+                                </span>                                
+                            </span>
+                            <span class="description">
+                                <p>{{resources[1]}}</p> 
+                            </span>
+
+                            <span class="containerSvg">
+                                <span class="svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m380-300 280-180-280-180v360ZM160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h640v-480H160v480Zm0 0v-480 480Z"/></svg>
+                                </span>
+                                <span class="title">
+                                    <h2>{{stream}}</h2>                                    
+                                </span>                                
+                            </span>
+                            <span class="description">
+                                <p>{{streaming[1]}}</p> 
+                            </span>
+
+                            <span class="containerSvg">
+                                <span class="svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-840h320v320H120v-320Zm80 80v160-160Zm320-80h320v320H520v-320Zm80 80v160-160ZM120-440h320v320H120v-320Zm80 80v160-160Zm440-80h80v120h120v80H720v120h-80v-120H520v-80h120v-120Zm-40-320v160h160v-160H600Zm-400 0v160h160v-160H200Zm0 400v160h160v-160H200Z"/></svg>
+                                </span>
+                                <span class="title">
+                                    <h2>{{quiz}}</h2>                                    
+                                </span>                                
+                            </span>
+                            <span class="description">
+                                <p>{{cuestionarios[1]}}</p> 
+                            </span>
+
+                        </div>
+                    </div>
+                </li>
+
+
             </ol>
-        </section>     
-        
+        </section>       
     </div>
 </main>

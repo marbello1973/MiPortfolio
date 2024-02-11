@@ -24,8 +24,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {        
-    background: linear-gradient(90deg, rgb(3, 8, 61) 0%, rgb(20, 2, 68)50%, rgb(24, 0, 54) 100%);
-    background: cover; 
+    /* background: linear-gradient(90deg, rgb(3, 8, 61) 0%, rgb(20, 2, 68)50%, rgb(24, 0, 54) 100%); */
+    /* background: cover;   */
+    background: #1b0f47
+;
+    
 }
 
 ol, ul {
@@ -64,5 +67,7 @@ table {
     --senary-text: #f1f1f1; 
     --black-gray: #333333; 
     --lineas-500: #ff00ff; 
+    --senary-text-100: #ffffff;
+    --icons-imagen:  rgb(78, 78, 243);
     
 }

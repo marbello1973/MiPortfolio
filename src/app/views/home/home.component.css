@@ -174,10 +174,10 @@
     .introducer{
         width: 300px;       
         margin: 0 auto;
-        font-size: 16px;
+        font-size: 18px;
         padding: 0.5em;
         color: #ced7f5;
-        font-weight: bold;
+       
     }
 
     .containerImagen{        
@@ -192,7 +192,7 @@
     }
     .imagen{
         position: absolute;
-        opacity: 0.2;
+        opacity: 0.1;
         width: 380px;
         height: 0 auto; 
         z-index: -1; 

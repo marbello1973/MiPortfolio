@@ -1,18 +1,34 @@
 .float {
     position: fixed;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     bottom: 40px;
-    border-radius: 50%;
+    border-radius: 73% 27% 75% 25% / 30% 71% 29% 70% ;
+    border: 2px solid var(--senary-text-100);
+    background: linear-gradient(45deg, #e100ff, #5900fd);
     cursor: pointer;
     z-index: 1;
     margin-left: 90%;
-    background: rgb(184, 184, 184);
+    text-transform: uppercase;
+    color: var(--senary-text-100);
+    opacity: 0.3;
+    font-size: 12px;  
+    transition: 0.5s;
+    
+    &:hover {
+        opacity: 1;
+        background: #e100ff;
+        color: var(--senary-text-100);
+        border-radius: 32% 68% 29% 71% / 74% 28% 72% 26% ;
+        color: var(--senary-text);
+
+    }
 }
 
 @media screen and (max-width: 760px) {
     .float {
         margin-left: 30%;
+       
         
     }
     

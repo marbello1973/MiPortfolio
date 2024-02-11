@@ -33,9 +33,13 @@ export class NavbarComponent   {
 
   toggleMenu(): void {   
       this.isMenuOpen = !this.isMenuOpen;
-  }
+  } 
   
-  // @ViewChild('navbar') navbar!: ElementRef;
+}
+
+
+/*
+// @ViewChild('navbar') navbar!: ElementRef;
   // @HostListener('document:mousemove', ['$event'])
   // onMouseMove(e: MouseEvent) {
     
@@ -68,4 +72,4 @@ export class NavbarComponent   {
   //   console.log(menuR);
   //   console.log(menuN);
   // }
-}
+*/
