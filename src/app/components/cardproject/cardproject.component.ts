@@ -1,16 +1,14 @@
 import { Component } from '@angular/core';
 import { DataService } from '../../service/data.service';
-import { CardprojectComponent } from '../../components/cardproject/cardproject.component';
-
 
 @Component({
-  selector: 'app-project',
+  selector: 'app-cardproject',
   standalone: true,
-  imports: [ CardprojectComponent],
-  templateUrl: './project.component.html',
-  styleUrl: './project.component.css'
+  imports: [],
+  templateUrl: './cardproject.component.html',
+  styleUrl: './cardproject.component.css'
 })
-export class ProjectComponent {
+export class CardprojectComponent {
 
   projectDataService: {
     id: number, 
@@ -43,5 +41,3 @@ export class ProjectComponent {
 
 
 }
-
-

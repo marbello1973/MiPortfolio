@@ -42,7 +42,7 @@ export class DataService {
         {streaming:"Vive una experiencia de transmisión de video mejorada, desde sesiones de ejercicios en tiempo real hasta tutoriales guiados por expertos."},
         {cuestionarios:"Personaliza tus pruebas de conocimientos para evaluar tu progreso y recibir retroalimentación específica, llevando tus habilidades al siguiente nivel."},       
       ],
-      description:'Es una aplicación web diseñada para ayudarte a mantener un estilo de vida saludable y activo. Con un enfoque integral en el bienestar físico y mental, la aplicación ofrece una variedad de características para ayudarte a alcanzar tus objetivos de fitness y salud.' , 
+      description:'Desarrollada con JavaScript, Node.js y Express, utiliza PostgreSQL con Sequelize para la gestión de datos. Además, integra JWT y bcrypt para garantizar la seguridad de la autenticación y el cifrado de contraseñas.' , 
       tecnologies: 
         ['JavasCript', 'Nodejs', 'Express', 'PostrgreSQL', 'Sequelize', 'Jwt', 'Bcrypt']
       },
@@ -91,7 +91,7 @@ export class DataService {
         { cuestionarios: 'Mantén un flujo de trabajo eficiente y cumple con tus plazos de manera consistente.'},
 
       ],
-      description: 'es una aplicación simple y eficiente desarrollada en React y JavaScript que ayuda a los usuarios a gestionar sus tareas diarias de manera organizada. Diseñada con una interfaz intuitiva y fácil de usar, la aplicación permite a los usuarios agregar, editar y eliminar tareas, así como realizar un seguimiento de su progreso.', 
+      description: 'Es una aplicación simple y eficiente desarrollada en React y JavaScript que ayuda a los usuarios a gestionar sus tareas diarias de manera organizada. Diseñada con una interfaz intuitiva y fácil de usar, la aplicación permite a los usuarios agregar, editar y eliminar tareas, así como realizar un seguimiento de su progreso.', 
       tecnologies: 
         ['React', 'JavaScript', 'HTML', 'CSS', 'API Rick and Morty']
     },
@@ -107,7 +107,7 @@ export class DataService {
         { streaming: 'Disfruta de sesiones de streaming diseñadas para fortalecer tu salud mental. Desde charlas motivacionales hasta actividades de relajación, te ofrecemos contenido streaming que se adapta a tus necesidades emocionales' },
         { cuestionarios: 'Evalúa tu bienestar emocional con cuestionarios personalizados. Obtén retroalimentación específica y consejos adaptados a tus respuestas, guiándote hacia una vida sin sufrimientos innecesarios.'},
       ],
-      description: ' es un proyecto inscrito en Henry Project, desarrollado por estudiantes de Henry elegidos por la empresa inscrita en la plataforma, mi roll en este proyecto fue desarrollar el backend de la aplicación, usando Typescript, Node, Express, Middleware para roles de usuarios, JWT, cifrado con bcrypt, PostgreSQL y Sequelize para generar los modelos MVC en la base de datos.', 
+      description: 'Desarrollé el backend con Typescript, Node.js y Express. Implementé middleware para roles de usuarios, JWT para la autenticación. Garanticé la seguridad de las contraseñas cifrado bcrypt en PostgreSQL, y definí modelos MVC con Sequelize.', 
       tecnologies: 
         ['Typescript', 'NodeJS', 'PostrgrSQL', 'Sequelize', 'Express', 'Bcrypt','Jwt', 'Nodemailer']
     },
