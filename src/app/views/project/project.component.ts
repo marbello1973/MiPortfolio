@@ -26,8 +26,8 @@ export class ProjectComponent {
   public currentProject: number = 0;  
 
   constructor(private projectService: DataService) {
-    this.projectDataService = this.projectService.getDataProject();  
-    console.log(this.projectDataService[0].name);      
+    this.projectDataService = this.projectService.getDataProject(); 
+          
   } 
 
   public algorithm: string = 'Algoritmos'

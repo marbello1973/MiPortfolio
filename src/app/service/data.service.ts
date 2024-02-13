@@ -58,7 +58,7 @@ export class DataService {
         { streaming: 'Con imágenes y diseño visual atractivo, la aplicación te sumerge en la riqueza cultural y geográfica de cada país.' },
         { cuestionarios: 'Pon a prueba tus conocimientos con cuestionarios interactivos.' },
       ],
-      description: 'es una aplicación web desarrollada en Angular que te permite explorar información detallada sobre países de todo el mundo. Con una interfaz intuitiva y atractiva, la aplicación aprovecha una API de países para proporcionar datos actualizados y precisos.', 
+      description: 'Aplicación web desarrollada en Angular que te permite explorar información detallada sobre países de todo el mundo. Interfaz intuitiva y atractiva, la aplicación aprovecha una API de países para proporcionar datos actualizados y precisos.', 
       tecnologies: 
         ['Angular', 'Typescript', 'HTML', 'CSS', 'Bootstrap', 'API']
     },
@@ -74,7 +74,7 @@ export class DataService {
         { streaming: 'Sumérgete en el universo animado con un diseño visual atractivo que refleja la esencia única de la serie.' },
         { cuestionarios: 'Evalúa tus conocimientos sobre "Rick and Morty" de manera personalizada y lleva tu comprensión de la serie a nuevas alturas.'},
       ],
-      description: 'es una emocionante aplicación web construida utilizando React y JavaScript que sumerge a los usuarios en el vasto universo de la popular serie animada "Rick and Morty". La aplicación proporciona una experiencia interactiva y divertida para explorar y aprender más sobre los personajes, episodios y ubicaciones de este intrigante universo.', 
+      description: 'Experiencia sólida en React, JavaScript, HTML y CSS, junto con integración de la API Rick and Morty. Capacidad para desarrollar experiencias interactivas y educativas basadas en el universo de la serie.', 
       tecnologies: 
         ['React', 'JavaScript', 'HTML', 'CSS', 'API Rick and Morty']
     },
@@ -111,8 +111,43 @@ export class DataService {
       tecnologies: 
         ['Typescript', 'NodeJS', 'PostrgrSQL', 'Sequelize', 'Express', 'Bcrypt','Jwt', 'Nodemailer']
     },
+    {
+      id:6,
+      name: 'Encriptador', 
+      imagen: 'assets/project/Encripter.png', 
+      url: 'https://marbello1973.github.io/Encripter/',
+      title: '¡Encriptador de palabras!',
+      subtitle: [
+        { algoritmos:'Descubre procesos personalizados para cada etapa de tu viaje sin sufrir, gracias a nuestros avanzados algoritmos de bienestar emocional.'},
+        { recursos: 'Disfruta de una experiencia interactiva que hace que aprender sobre la serie sea emocionante y entretenido.' },
+        { streaming: 'Disfruta de sesiones de streaming diseñadas para fortalecer tu salud mental. Desde charlas motivacionales hasta actividades de relajación, te ofrecemos contenido streaming que se adapta a tus necesidades emocionales' },
+        { cuestionarios: 'Evalúa tu bienestar emocional con cuestionarios personalizados. Obtén retroalimentación específica y consejos adaptados a tus respuestas, guiándote hacia una vida sin sufrimientos innecesarios.'},
+      ],
+      description: 'En resumen, el encriptador desarrollado con CSS, HTML y JavaScript es una aplicación web que permite a los usuarios cifrar y descifrar palabras utilizando tecnologías web estándar para el diseño, la interacción y la lógica.', 
+      tecnologies: 
+        ['JavaScript', 'HTML', 'CSS']
+    },
+    {
+      id:7,
+      name: 'Seguimiento de gastos java', 
+      imagen: 'assets/project/gastos.png', 
+      url: 'https://github.com/marbello1973/Upskilling-Java-pf/tree/main/Admin-Gastos',
+      title: '¡Seguimiento de gastos!',
+      subtitle: [
+        { algoritmos:'Descubre procesos personalizados para cada etapa de tu viaje sin sufrir, gracias a nuestros avanzados algoritmos de bienestar emocional.'},
+        { recursos: 'Disfruta de una experiencia interactiva que hace que aprender sobre la serie sea emocionante y entretenido.' },
+        { streaming: 'Disfruta de sesiones de streaming diseñadas para fortalecer tu salud mental. Desde charlas motivacionales hasta actividades de relajación, te ofrecemos contenido streaming que se adapta a tus necesidades emocionales' },
+        { cuestionarios: 'Evalúa tu bienestar emocional con cuestionarios personalizados. Obtén retroalimentación específica y consejos adaptados a tus respuestas, guiándote hacia una vida sin sufrimientos innecesarios.'},
+      ],
+      description: 'El proyecto Seguimiento de gastos Java es una aplicación web desarrollada utilizando el framework Spring Boot en Java. Permite a los usuarios llevar un registro detallado de sus gastos, incluyendo categorías, montos y fechas.', 
+      tecnologies: 
+        ['java', 'spring-boot']
+    },
     
   ] 
+
+
+  //https://github.com/marbello1973/Upskilling-Java-pf/tree/main/Admin-Gastos
   
   id: number = 0;
   constructor() {
