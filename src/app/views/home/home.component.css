@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
 }
 
 .container {
@@ -14,6 +15,11 @@
     padding: 30px;
     justify-content: center;
     margin-top: 0.5em;
+
+}
+
+.containerText{
+    margin-top: 4em;
 }
 
 .textHello {
@@ -122,14 +128,21 @@
     margin-top: 2em;
 }
 
+
+
 @media screen and (max-width: 768px) {
     .container {
         flex-direction: column;
         justify-content: center;
         align-items: center;       
-        transition: 1s;        
+        transition: 1s;
+
     }       
     
+    .containerText {
+        margin: 0 auto;
+    }
+
     .textHello {       
         font-size: 20px;
         text-align: center;                

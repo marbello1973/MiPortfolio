@@ -1,19 +1,21 @@
-<nav id="navOpen" class="navbar">  
-  <div class="containerDiv">
-    <div id="dm" class="logo"><a>d</a>m</div>
-    <div class="menu-toggle" (click)="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>    
+<main>
+  <nav id="navOpen" class="navbar">  
+    <div class="containerDiv">
+      <div id="dm" class="logo"><a>d</a>m</div>
+      <div class="menu-toggle" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>    
+      </div>
     </div>
-  </div>
-  <div class="menu" [ngClass]="{'active': isMenuOpen}">       
+    <div class="menu" [ngClass]="{'active': isMenuOpen}">       
       @for (menu of menuRoutes; track $index) {
         @if(menu.path !== undefined){
           <a class="menu-a" (click)="scrollTo(menu.path)">{{menu.path}}</a>
         }
       }       
-  </div>
-</nav>
+    </div>
+  </nav>
+</main>
     
   
