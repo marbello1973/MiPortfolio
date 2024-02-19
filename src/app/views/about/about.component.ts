@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import { CardjavascriptComponent } from '../../components/cardabout/cardjavascript/cardjavascript.component';
+
+
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [],
+  imports: [CardjavascriptComponent],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })
