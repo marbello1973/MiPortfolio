@@ -4,8 +4,6 @@ import { RouterModule, RouterLinkActive } from '@angular/router';
 import { Router } from '@angular/router';
 import { routes} from '../../app.routes'
 
-
-
 @Component({
   selector: 'app-navbar',
   standalone: true,
