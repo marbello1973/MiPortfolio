@@ -5,7 +5,7 @@ import { ProjectComponent } from './views/project/project.component';
 import { ContactComponent } from './views/contact/contact.component';
 
 export const routes: Routes = [    
-    {path: 'inicio', component: HomeComponent },
+    {path: '/', component: HomeComponent },
     {path: 'sobre mi', component: AboutComponent}, 
     {path: 'proyectos', component: ProjectComponent},
     {path: 'contacto', component: ContactComponent },    
