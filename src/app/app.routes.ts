@@ -5,10 +5,10 @@ import { ProjectComponent } from './views/project/project.component';
 import { ContactComponent } from './views/contact/contact.component';
 
 export const routes: Routes = [    
-    {path: '/', component: HomeComponent },
+    {path: 'inicio', component: HomeComponent },
     {path: 'sobre mi', component: AboutComponent}, 
     {path: 'proyectos', component: ProjectComponent},
     {path: 'contacto', component: ContactComponent },    
-    {path: '**', pathMatch: 'full', redirectTo: 'inicio'}  
+    {path: '**', pathMatch: 'full', redirectTo: '/inicio'}  
 
 ];
