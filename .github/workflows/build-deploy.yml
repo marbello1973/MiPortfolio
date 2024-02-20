@@ -25,6 +25,9 @@ jobs:
         run: |
           npm install
           npm run-script deploy
+          
+      - name: Rename index for routing
+        run: mv dist/browser/index.html dist/browser/404.html 
 
       - name: Deploy to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4.2.5
