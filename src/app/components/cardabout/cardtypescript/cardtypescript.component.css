@@ -1,0 +1,38 @@
+main {
+    /* border: 1px solid var(--icon-color-typescript); */
+    border-radius: 6px;     
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0.5em;    
+    transition: all 0.5s ease-in-out;
+
+    & section {
+        margin: 0 auto;
+
+        & div {
+            margin: 0 auto;
+
+            & svg {
+                width: 60px;
+                height: 60px;               
+                fill: var(--icon-color-typescript);
+                border-radius: 50%;
+            }
+        }
+
+        & h1 {
+            color: var(--icon-color-typescript);
+            text-transform: uppercase;
+            opacity: 0.8; 
+            font-size: 12px;           
+        }
+    }
+    
+}
+
+main:hover {
+    /* border: 1px solid var(--icon-color-typescript); */
+    box-shadow: 0 0 10px var(--icon-color-typescript);
+    /* transform: scale(1.1); */
+}

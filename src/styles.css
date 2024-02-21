@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* background: #1b0f47; */
 }
 
 html, body, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, figcaption, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
@@ -23,13 +24,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: block;
 }
 
-body {        
+ body {        
     /* background: linear-gradient(90deg, rgb(3, 8, 61) 0%, rgb(20, 2, 68)50%, rgb(24, 0, 54) 100%); */
     /* background: cover;   */
-    background: #1b0f47
-;
+    background: #1b0f47;
+    /* margin: 0 auto; */
     
-}
+} 
+
 
 ol, ul {
     list-style: none;
@@ -57,6 +59,10 @@ table {
 
 
 :root{
+    --main-gradient: linear-gradient(90deg, #ff00ff 0%, #1100ff 100%);
+    --main-color-banderared: #ff0000;
+    --main-color-banderablue: #0000ff;
+    --main-color-banderayellow: #ffd900;
     --main-color: #0212E6;
     --main-color-100: #606aff;
     --secondary-color: #3D02E6;
@@ -69,5 +75,10 @@ table {
     --lineas-500: #ff00ff; 
     --senary-text-100: #ffffff;
     --icons-imagen:  rgb(78, 78, 243);
+
+    /* color de iconos  */
+    --icon-color-typescript: #0066ff;
+    --text-java-blue: #73A1FB;
+    --text-java-orange: #DB380E;
     
 }

@@ -1,22 +1,22 @@
 .container {
     width: 1200px;
-    margin-top: 6em;
-    background: red;
+    margin-top: 6em;    
+    border: 1px solid #4514a1;
+    padding: 0.5em;
+    border-radius: 1em;
 
-    .title {               
-        background: rgb(46, 46, 46);       
+
+    .title {        
         font-size: 2rem;
-        text-align: center;       
-        color: #fff;       
+        text-align: center;             
         text-transform: uppercase;
 
         & h1 {            
             font-size: 2rem;
-            text-align: center;           
             color: #fff;
+            text-align: center;           
             opacity: 0.5;
-            text-transform: uppercase;           
-            
+            text-transform: uppercase;            
         }        
     
     }
@@ -24,8 +24,7 @@
     .perfil {
         display: flex;
         justify-content: center;
-        align-items: center;       
-        background: rgb(88, 88, 88);
+        align-items: center;        
         transition: all 0.5s ease-in-out;
 
         .def {
@@ -40,7 +39,7 @@
             display: block;
             width: 410px;
             height: 410px;
-            border: 1.5px solid #ff0000;               
+            border: 1.5px solid var(--main-color-banderayellow);               
             border-radius: 76% 26% 81% 20% / 38% 76% 28% 65%; ;
             background: #1100ff;           
         }
@@ -48,7 +47,7 @@
             width: 390px;
             height: 390px;            
             border-radius: 74% 26% 80% 20% / 38% 75% 25% 62%;
-            border: 1.5px solid #ffd900;
+            border: 1.5px solid var(--main-color-banderared);
             margin-top: 0.2em;           
 
         }    
@@ -58,16 +57,29 @@
             font-size: 1.2rem;           
             color: #fff;
             margin: 1em;
+            opacity: 0.8;
         }
     }
 
     .skills {
-        margin: 0 auto;
+        gap: 0.5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
 
         & h1 {
             text-align: center;           
-            font-size: 2.5rem;           
-            color: #fff;            
+            font-size: 1.5rem;           
+            color: #fff; 
+            text-transform: uppercase;
+            opacity: 0.5;           
+        }
+
+        .cardSkill {
+            display: flex;
+            flex-direction: row;
+            gap: 0.5em;
         }
     }
 }
@@ -101,6 +113,15 @@
                     }
                 }
             }
+        }
+
+        .skills {
+            margin: 0;
+
+            .cardSkill {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5em;}
         }
     }
     

@@ -27,5 +27,6 @@ import { ButtonsInicioComponent } from './components/buttons-inicio/buttons-inic
   styleUrl: './app.component.css'
 })
 export class AppComponent {  
+  public title = 'app';
 }
  

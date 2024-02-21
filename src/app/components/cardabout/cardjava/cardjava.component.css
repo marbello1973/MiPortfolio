@@ -22,7 +22,7 @@ main {
         }
 
         & h1 {
-            color: var(--main-color-banderayellow);
+            color: var(--text-java-orange);
             text-transform: uppercase;
             opacity: 0.8;
             font-size: 12px;
@@ -33,6 +33,6 @@ main {
 
 main:hover {
     /* border: 1px solid var(--main-color-banderayellow); */
-    box-shadow: 0 0 10px var(--main-color-banderayellow);
+    box-shadow: 0 0 10px var(--text-java-orange);
     /* transform: scale(1.1); */
 }
