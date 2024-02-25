@@ -1,11 +1,11 @@
 main {
-    /* border: 1px solid var(--icon-color-typescript); */
-    border-radius: 6px;     
+    /* border: 1px solid var(--main-color-banderayellow); */
+    /* border-radius: 21% 79% 8% 92% / 86% 30% 70% 14%;     
     width: 100%;
     margin: 0 auto;
     text-align: center;
     padding: 0.5em;    
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; */
 
     & section {
         margin: 0 auto;
@@ -16,23 +16,65 @@ main {
             & svg {
                 width: 60px;
                 height: 60px;               
-                fill: var(--icon-color-typescript);
+                fill: var(--main-color-banderayellow);
                 border-radius: 50%;
             }
         }
 
-        & h1 {
-            color: var(--icon-color-typescript);
+        /* & h1 {
+            color: var(--main-color-banderayellow);
             text-transform: uppercase;
-            opacity: 0.8; 
-            font-size: 12px;           
+            opacity: 0.8;
+            font-size: 12px;
+        } */
+
+        & h1 {
+            border-radius: 4px;            
+            padding: 5px;
+            border: 1px solid #ffffff;
+            color: #ffffff;
+            font-size: 0.7em;
+            text-transform: uppercase;
+            margin: 10px 0;
+            display: inline-block;
+            opacity: 0.4;
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 1px; 
+        }
+
+        & h1:hover {
+            opacity: 1;
         }
     }
     
 }
 
-main:hover {
-    /* border: 1px solid var(--icon-color-typescript); */
-    box-shadow: 0 0 10px var(--icon-color-typescript);
-    /* transform: scale(1.1); */
+/* main:hover {
+    border: 1px solid var(--main-color-banderayellow);
+    box-shadow: 0 0 10px var(--main-color-banderayellow);
+    transform: scale(1.1);
+} */
+
+/*
+.snip1336 figcaption a {
+    padding: 5px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    margin: 10px 0;
+    display: inline-block;
+    opacity: 0.65;
+    width: 47%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
+.snip1336 figcaption a:hover {
+    opacity: 1;
+}
+*/
