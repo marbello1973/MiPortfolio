@@ -195,7 +195,11 @@
 
     .containerImagen{        
         margin: 0 auto;
-        padding: 0.5em;
+        width: 250px;
+        height: 250px;
+        opacity: 0.2;
+        position: absolute;
+        margin-top: 25em;
     }
 
     .skill{
