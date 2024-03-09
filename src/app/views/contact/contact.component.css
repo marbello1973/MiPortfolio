@@ -1,7 +1,99 @@
-.container {
-    & h1 {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-        color: #fff;
+.formcontainer {
+    margin-top: 50px;
+    /* margin-bottom: 50px; */    
+    padding: 20px;
+    border: 1px solid #303030;
+    border-radius: 5px;
+    /* box-shadow: 0 0 10px #e0e0e0; */
+    /* background-color: #f8f8f8; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 800px; 
+    
+    .error {
+        color: red;
+        font-size: 0.8em;
+        margin-top: 0.5em;
+    
     }
+    
+    .sectionContainerName {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1em;
+
+        .labelName {
+            color: #fff;
+            /* outline: none;    
+            &:focus {
+                border: none;
+            }    
+            &:active {
+                border: none;
+            } */            
+        }        
+
+        .form-control-name {
+            outline: none;       
+        }
+        
+    }
+
+    .sectionContainerEmail{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1em;
+
+        .labelEmail {
+            color: #fff;
+            margin-top: 1em;
+        }
+
+        .form-control-email {
+            outline: none;
+        }       
+    }
+
+    .sectionContainerMessage {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1em;
+
+        .labelMessage {
+            color: #fff;
+            margin-top: 1em;
+        }
+    
+        .form-control-message {
+            outline: none;
+        }
+
+    }
+
+    .sectionContainerButton {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1em;
+
+        .btn {
+            margin-top: 1em;
+            width: 80px;        
+        }    
+        
+    }   
+}
+
+@media screen and (max-width: 768px) {
+    .formcontainer {
+        width: 600px;
+    }
+    
+}
+
+@media screen and (max-width: 636px) {
+    .formcontainer {
+        width: 300px;
+    }
+    
 }

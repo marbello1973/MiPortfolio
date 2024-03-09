@@ -8,8 +8,6 @@ import { ProjectComponent } from './views/project/project.component';
 import { ContactComponent } from './views/contact/contact.component';
 import { ButtonsInicioComponent } from './components/buttons-inicio/buttons-inicio.component';
 
-
-
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -27,6 +25,6 @@ import { ButtonsInicioComponent } from './components/buttons-inicio/buttons-inic
   styleUrl: './app.component.css'
 })
 export class AppComponent {  
-  public title = 'app';
+  public title = 'portfolio';
 }
  

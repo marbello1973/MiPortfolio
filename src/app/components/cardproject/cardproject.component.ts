@@ -35,7 +35,7 @@ export class CardprojectComponent {
     if (rita) {
       container.style.background = 'rgb(252, 252, 252)';
       container.style.background += 'radial-gradient(circle, rgba(252, 252, 252, 1) 0%, rgba(27, 15, 71, 1) 50%, rgba(27, 15, 71, 1) 100%)';
-      console.log(container.style.background);
+      
     }
   }
 

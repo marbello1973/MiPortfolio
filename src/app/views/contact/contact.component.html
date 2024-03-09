@@ -1,6 +1,52 @@
-<div class="container">
-    <h1>
-        contacto
-    </h1>
+<form class="formcontainer" [formGroup]="myForm" (ngSubmit)="onSubmit($event)" >
 
-</div>
+    <section class="sectionContainerName">
+
+        <label for="name" class="labelName">Name</label>
+        <input type="text" id="name" name="name" class="form-control-name" [formControl]="name">
+        
+        @if(name.errors && name.dirty){
+            @if(name.hasError('required')){
+                <span class="error">Nombre es requerido</span>
+            }
+            @if (name.hasError('minlength')) {
+                <span class="error">Nombre debe ser mayor a un caracteres</span>
+            }
+        }
+
+    </section>
+
+    <section class="sectionContainerEmail">
+
+        <label for="email" class="labelEmail">Email</label>
+        <input type="text" id="email" name="email" class="form-control-email" [formControl]="email">
+    
+        @if(email.errors && email.dirty){
+            @if(email.hasError('required')){
+                <span class="error">Email es requerido</span>
+            }
+            @if (email.hasError('pattern')) {
+                <span class="error">Email no es valido</span>
+            }
+        }
+
+    </section>
+
+    <section class="sectionContainerMessage">
+
+        <label for="message" class="labelMessage">Message</label>
+        <textarea id="message" name="message" class="form-control-message" formControlName="message"></textarea>          
+    
+    </section>
+    
+    <section class="sectionContainerButton">
+
+        <button [disabled]="email.invalid" id="btn" type="submit" class="btn" >Enviar</button>
+
+    </section>
+
+
+</form>
+
+<!-- (click)="onSubmit($event)" -->
+<!-- [disabled]="[email.invalid]" -->
