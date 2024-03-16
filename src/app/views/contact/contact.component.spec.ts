@@ -59,7 +59,7 @@ describe('ContactComponent', () => {
     expect(component.name.value).toEqual('David Marbello');
   })
 
-  it('should disable email and message when name is empty', () => {
+  it('El campo email y mensaje debe estar deshabilitado si el campo nombre esta vacio', () => {
 
     const compiled = fixture.nativeElement;
     const inputElementName = compiled.querySelector('input[name="name"]');
