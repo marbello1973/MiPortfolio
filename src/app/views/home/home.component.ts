@@ -3,6 +3,7 @@ import {CardskillComponent} from '../../components/cardskill/cardskill.component
 import { ProjectComponent } from '../project/project.component';
 import { ContactComponent } from '../contact/contact.component';
 import { AboutComponent } from '../about/about.component';
+import { ApiComponent } from '../api/api.component';
 
 
 
@@ -14,7 +15,7 @@ import { AboutComponent } from '../about/about.component';
     ProjectComponent, 
     ContactComponent, 
     AboutComponent, 
-    
+    ApiComponent    
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
