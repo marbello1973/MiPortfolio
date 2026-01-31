@@ -1,54 +1,61 @@
-<form class="formcontainer" [formGroup]="myForm" (ngSubmit)="onSubmit($event)" >
+<form class="formcontainer" [formGroup]="myForm" (ngSubmit)="onSubmit($event)">
 
     <section class="sectionContainerName">
-
         <label for="name" class="labelName">Nombre</label>
-        <input #inputName value="david" type="text" id="name" name="name" class="form-control-name" [formControl]="name">
-        
-        @if(name.errors && name.dirty){
-            @if(name.hasError('required')){
+        <input type="text" id="name" class="form-control-name"
+               formControlName="name" autocomplete="name">
+
+        @if(myForm.get('name')?.invalid && (myForm.get('name')?.dirty || myForm.get('name')?.touched)){
+            @if(myForm.get('name')?.hasError('required')){
                 <span class="error">Nombre es requerido</span>
             }
-            @if (name.hasError('minlength')) {
-                <span class="error">Nombre debe ser mayor a un caracteres</span>
+            @if (myForm.get('name')?.hasError('minlength')) {
+                <span class="error">Nombre debe tener al menos 2 caracteres</span>
             }
         }
-
     </section>
 
-    <section class="sectionContainerEmail">       
+    <section class="sectionContainerEmail">
+        <label for="email" class="labelEmail">Email</label>
+        <input type="email" id="email" class="form-control-email"
+               formControlName="email" autocomplete="email">
 
-        <label for="email" class="labelEmail">Email</label>     
-        <input #input type="text" id="email" name="email" class="form-control-email" [formControl]="email">      
-    
-        @if(email.errors && email.dirty){
-            @if(email.hasError('required')){
+        @if(myForm.get('email')?.invalid && (myForm.get('email')?.dirty || myForm.get('email')?.touched)){
+            @if(myForm.get('email')?.hasError('required')){
                 <span class="error">Email es requerido</span>
             }
-            @if (email.hasError('pattern')) {
-                <span class="error">Email no es valido</span>
+            @if (myForm.get('email')?.hasError('email') || myForm.get('email')?.hasError('pattern')) {
+                <span class="error">Email no es válido</span>
             }
         }
-    
-
-
     </section>
 
     <section class="sectionContainerMessage">
-
         <label for="message" class="labelMessage">Mensaje</label>
-        <textarea id="message" name="message" class="form-control-message" formControlName="message"></textarea>          
-    
+        <textarea id="message" class="form-control-message"
+                  formControlName="message" rows="4" maxlength="200"></textarea>
+
+        @if(myForm.get('message')?.invalid && (myForm.get('message')?.dirty || myForm.get('message')?.touched)){
+            @if(myForm.get('message')?.hasError('required')){
+                <span class="error">Mensaje es requerido</span>
+            }
+            @if (myForm.get('message')?.hasError('minlength')) {
+                <span class="error">Mensaje debe tener al menos 10 caracteres</span>
+            }
+        }
+        <div class="character-count">
+            {{myForm.get('message')?.value?.length || 0}}/200
+        </div>
     </section>
-    
+
     <section class="sectionContainerButton">
-
-        <button [disabled]="email.invalid" id="btn" type="submit" class="btn" >Enviar</button>
-
+        <button [disabled]="myForm.invalid" type="submit" class="btn">
+            Enviar
+        </button>
     </section>
-
 
 </form>
 
-<!-- (click)="onSubmit($event)" -->
-<!-- [disabled]="[email.invalid]" -->
+
+
+

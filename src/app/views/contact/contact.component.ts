@@ -1,6 +1,5 @@
-import { AfterViewInit, Component, ElementRef, ViewChild, OnInit } from '@angular/core';
-import { FormControl, Validators, ReactiveFormsModule, FormGroup, FormBuilder } from '@angular/forms';
-
+import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder, Validators, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -9,50 +8,72 @@ import { FormControl, Validators, ReactiveFormsModule, FormGroup, FormBuilder } 
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })
-export class ContactComponent implements OnInit, AfterViewInit {
+export class ContactComponent implements OnInit {
 
   myForm!: FormGroup;
-  public regexEmail = '^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$';
 
-  @ViewChild('inputName') inputName?: ElementRef;
-   ngAfterViewInit() {
-    if( this.inputName){
-      const nameInput = this.inputName.nativeElement.value;
-      console.log(nameInput); 
+  constructor(private fb: FormBuilder) { }
+
+  ngOnInit(): void {
+    this.initializeForm();
+  }
+
+  private initializeForm(): void {
+    this.myForm = this.fb.group({
+      name: ['', [
+        Validators.required,
+        Validators.minLength(2),
+        Validators.maxLength(50)
+      ]],
+      email: ['', [
+        Validators.required,
+        Validators.email,
+        Validators.pattern(/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/i)
+      ]],
+      message: ['', [
+        Validators.required,
+        Validators.minLength(10),
+        Validators.maxLength(200)
+      ]]
+    });
+  }
+
+  onSubmit(event: Event): void {
+    event.preventDefault();
+
+    if (this.myForm.valid) {
+      // Aquí puedes enviar los datos a tu backend
+      const formData = this.myForm.value;
+      console.log('Datos del formulario:', formData);
+
+      // Mostrar mensaje de éxito
+      window.alert('¡Mensaje enviado con éxito!');
+
+      // Resetear formulario
+      this.myForm.reset();
+
+      // Opcional: Marcar el formulario como "pristine" después de reset
+      this.myForm.markAsPristine();
+      this.myForm.markAsUntouched();
+
+    } else {
+      // Marcar todos los campos como "touched" para mostrar errores
+      this.markAllAsTouched();
+      window.alert('Por favor, completa correctamente todos los campos.');
     }
   }
 
-  public name: FormControl<string | null> = new FormControl('',[Validators.required, Validators.minLength(2)]);
-  public email: FormControl<string | null> = new FormControl('',[Validators.required, Validators.email, Validators.pattern(this.regexEmail)]) 
-  public message: FormControl<string | null> = new FormControl('',[Validators.required, Validators.minLength(10), Validators.maxLength(200)])  
-     
-  constructor(private fb: FormBuilder) { } 
+  private markAllAsTouched(): void {
+    Object.values(this.myForm.controls).forEach(control => {
+      control.markAsTouched();
+    });
+  }
 
-
-
-  ngOnInit() {
-    this.myForm = this.fb.group({
-      name: [''],
-      email: [''],
-      message: ['']
-    })     
-  } 
- 
-
-  onSubmit(event: Event) {
-    event.preventDefault();
-    if (this.myForm.valid) {
-      window.alert('Formulario válido');
-      this.myForm.reset();
-      this.myForm.controls['name'].setValue('');      
-      this.myForm.controls['email'].setValue('');
-      this.myForm.controls['message'].setValue('');            
-    } else {
-      window.alert('Formulario inválido');
-    }
-  } 
+  // Helper para acceder fácilmente a los controles en el template
+  get name() { return this.myForm.get('name'); }
+  get email() { return this.myForm.get('email'); }
+  get message() { return this.myForm.get('message'); }
 }
-function Viechild(arg0: string): (target: ContactComponent, propertyKey: "inputName") => void {
-  throw new Error('Function not implemented.');
-}
+
+
 

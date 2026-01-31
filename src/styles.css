@@ -24,13 +24,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: block;
 }
 
- body {        
+ body {
     /* background: linear-gradient(90deg, rgb(3, 8, 61) 0%, rgb(20, 2, 68)50%, rgb(24, 0, 54) 100%); */
     /* background: cover;   */
     background: #1b0f47;
     /* margin: 0 auto; */
-    
-} 
+
+}
 
 
 ol, ul {
@@ -52,7 +52,7 @@ table {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    html {       
+    html {
         scroll-behavior: auto !important;
     }
 }
@@ -70,9 +70,9 @@ table {
     --tertiary-color-100: #bb5cff;
     --quaternary-color: #0058E6;
     --quinary-color: #9E02AC;
-    --senary-text: #f1f1f1; 
-    --black-gray: #333333; 
-    --lineas-500: #ff00ff; 
+    --senary-text: #f1f1f1;
+    --black-gray: #333333;
+    --lineas-500: #ff00ff;
     --senary-text-100: #ffffff;
     --icons-imagen:  rgb(78, 78, 243);
 
@@ -80,5 +80,5 @@ table {
     --icon-color-typescript: #0066ff;
     --text-java-blue: #73A1FB;
     --text-java-orange: #DB380E;
-    
+
 }
